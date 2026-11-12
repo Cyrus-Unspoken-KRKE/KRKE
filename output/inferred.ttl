@@ -1,0 +1,113 @@
+@prefix cu: <https://example.org/cyrus-unspoken/> .
+
+cu:depiction_E01 a cu:Depiction ;
+    cu:derivedBy cu:RuleConquest ;
+    cu:hasEvidence cu:excerpt_E01 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Conqueror ;
+    cu:triggeredBy cu:action_E01 .
+
+cu:depiction_E02 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E02 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E02 .
+
+cu:depiction_E03 a cu:Depiction ;
+    cu:derivedBy cu:RuleRestoration ;
+    cu:hasEvidence cu:excerpt_E03 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Restorer ;
+    cu:triggeredBy cu:action_E03 .
+
+cu:depiction_E04 a cu:Depiction ;
+    cu:derivedBy cu:RuleRestoration ;
+    cu:hasEvidence cu:excerpt_E04 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Restorer ;
+    cu:triggeredBy cu:action_E04 .
+
+cu:depiction_E05 a cu:Depiction ;
+    cu:derivedBy cu:RuleConquest ;
+    cu:hasEvidence cu:excerpt_E05 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Conqueror ;
+    cu:triggeredBy cu:action_E05 .
+
+cu:depiction_E06 a cu:Depiction ;
+    cu:derivedBy cu:RuleConquest ;
+    cu:hasEvidence cu:excerpt_E06 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Conqueror ;
+    cu:triggeredBy cu:action_E06 .
+
+cu:depiction_E07 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E07 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E07 .
+
+cu:depiction_E08 a cu:Depiction ;
+    cu:derivedBy cu:RuleConquest ;
+    cu:hasEvidence cu:excerpt_E08 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Conqueror ;
+    cu:triggeredBy cu:action_E08 .
+
+cu:depiction_E09 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E09 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E09 .
+
+cu:depiction_E10 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E10 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E10 .
+
+cu:depiction_E11 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E11 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E11 .
+
+cu:depiction_E12 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E12 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E12 .
+
+cu:excerpt_E02 cu:hasImplication cu:implication_E02_PriorCondition .
+
+cu:excerpt_E05 cu:hasImplication cu:implication_E05_PoliticalImpact .
+
+cu:excerpt_E06 cu:hasImplication cu:implication_E06_HumanImpact .
+
+cu:implication_E02_PriorCondition a cu:TacitImplication ;
+    cu:affectedEntity "Babylonian citizens" ;
+    cu:implicationDerivedBy cu:RulePriorService ;
+    cu:implicationKind cu:PriorCondition ;
+    cu:implicationText "The passage presupposes an earlier burden of forced service." ;
+    cu:implicationTriggeredBy cu:action_E02 .
+
+cu:implication_E05_PoliticalImpact a cu:TacitImplication ;
+    cu:affectedEntity "Sardis" ;
+    cu:implicationDerivedBy cu:RuleCityCapture ;
+    cu:implicationKind cu:PoliticalImpact ;
+    cu:implicationText "The city's capture suggests a change of political control in this narrative." ;
+    cu:implicationTriggeredBy cu:action_E05 .
+
+cu:implication_E06_HumanImpact a cu:TacitImplication ;
+    cu:affectedEntity "Croesus" ;
+    cu:implicationDerivedBy cu:RuleCaptivity ;
+    cu:implicationKind cu:HumanImpact ;
+    cu:implicationText "Captivity implies a restriction of Croesus's personal freedom." ;
+    cu:implicationTriggeredBy cu:action_E06 .
+

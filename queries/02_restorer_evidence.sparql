@@ -1,0 +1,6 @@
+PREFIX cu: <https://example.org/cyrus-unspoken/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT ?excerpt ?locator ?text ?url WHERE {
+  ?depiction cu:portraysAs cu:Restorer ; cu:hasEvidence ?excerpt .
+  ?excerpt cu:sourceLocator ?locator ; cu:paraphrase ?text ; dcterms:source ?url .
+} ORDER BY ?excerpt

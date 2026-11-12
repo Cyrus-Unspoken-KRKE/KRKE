@@ -1,0 +1,8 @@
+PREFIX cu: <https://example.org/cyrus-unspoken/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?excerpt ?actionType ?cue ?role ?rule WHERE {
+  ?depiction cu:hasEvidence ?excerpt ; cu:triggeredBy ?action ;
+             cu:portraysAs ?role ; cu:derivedBy ?rule .
+  ?action a ?actionType ; cu:matchedCue ?cue .
+  FILTER(?actionType IN (cu:Restoration, cu:Conquest, cu:GoodGovernance))
+} ORDER BY ?excerpt

@@ -1,0 +1,253 @@
+@prefix cu: <https://example.org/cyrus-unspoken/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+cu:excerpt_E01 a cu:Excerpt ;
+    dcterms:source <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    cu:depictsAction cu:action_E01 ;
+    cu:fromSource cu:source_cylinder ;
+    cu:hasHistoricalContext cu:historical_context_E01 ;
+    cu:paraphrase "Cyrus's army entered Babylon without frightening its inhabitants." ;
+    cu:sourceLocator "line 24" .
+
+cu:excerpt_E02 a cu:Excerpt ;
+    dcterms:source <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    cu:depictsAction cu:action_E02 ;
+    cu:fromSource cu:source_cylinder ;
+    cu:hasHistoricalContext cu:historical_context_E02 ;
+    cu:paraphrase "Cyrus freed Babylonian citizens from forced service." ;
+    cu:sourceLocator "lines 25-26" .
+
+cu:excerpt_E03 a cu:Excerpt ;
+    dcterms:source <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    cu:depictsAction cu:action_E03 ;
+    cu:fromSource cu:source_cylinder ;
+    cu:hasHistoricalContext cu:historical_context_E03 ;
+    cu:paraphrase "Cyrus returned divine images to their sanctuaries." ;
+    cu:sourceLocator "line 32" .
+
+cu:excerpt_E04 a cu:Excerpt ;
+    dcterms:source <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    cu:depictsAction cu:action_E04 ;
+    cu:fromSource cu:source_cylinder ;
+    cu:hasHistoricalContext cu:historical_context_E04 ;
+    cu:paraphrase "Cyrus rebuilt part of Babylon's quay wall." ;
+    cu:sourceLocator "lines 39-41" .
+
+cu:excerpt_E05 a cu:Excerpt ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1b*.html> ;
+    cu:depictsAction cu:action_E05 ;
+    cu:fromSource cu:source_histories ;
+    cu:hasHistoricalContext cu:historical_context_E05 ;
+    cu:paraphrase "Cyrus's forces captured Sardis after soldiers breached its wall." ;
+    cu:sourceLocator "1.84" .
+
+cu:excerpt_E06 a cu:Excerpt ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1b*.html> ;
+    cu:depictsAction cu:action_E06 ;
+    cu:fromSource cu:source_histories ;
+    cu:hasHistoricalContext cu:historical_context_E06 ;
+    cu:paraphrase "Cyrus's forces took Croesus captive after the fall of Sardis." ;
+    cu:sourceLocator "1.86" .
+
+cu:excerpt_E07 a cu:Excerpt ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1b*.html> ;
+    cu:depictsAction cu:action_E07 ;
+    cu:fromSource cu:source_histories ;
+    cu:hasHistoricalContext cu:historical_context_E07 ;
+    cu:paraphrase "Cyrus ordered the pyre extinguished and spared Croesus." ;
+    cu:sourceLocator "1.86-88" .
+
+cu:excerpt_E08 a cu:Excerpt ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1d*.html> ;
+    cu:depictsAction cu:action_E08 ;
+    cu:fromSource cu:source_histories ;
+    cu:hasHistoricalContext cu:historical_context_E08 ;
+    cu:paraphrase "Cyrus diverted the Euphrates so his soldiers entered Babylon." ;
+    cu:sourceLocator "1.191" .
+
+cu:excerpt_E09 a cu:Excerpt ;
+    dcterms:source <https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0204%3Abook%3D8%3Achapter%3D2> ;
+    cu:depictsAction cu:action_E09 ;
+    cu:fromSource cu:source_cyropaedia ;
+    cu:hasHistoricalContext cu:historical_context_E09 ;
+    cu:paraphrase "Cyrus supported companions during their misfortunes." ;
+    cu:sourceLocator "8.2.1-2" .
+
+cu:excerpt_E10 a cu:Excerpt ;
+    dcterms:source <https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0204%3Abook%3D8%3Achapter%3D2> ;
+    cu:depictsAction cu:action_E10 ;
+    cu:fromSource cu:source_cyropaedia ;
+    cu:hasHistoricalContext cu:historical_context_E10 ;
+    cu:paraphrase "Cyrus rewarded those whose service pleased him." ;
+    cu:sourceLocator "8.2.3" .
+
+cu:excerpt_E11 a cu:Excerpt ;
+    dcterms:source <https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0204%3Abook%3D8%3Achapter%3D2> ;
+    cu:depictsAction cu:action_E11 ;
+    cu:fromSource cu:source_cyropaedia ;
+    cu:hasHistoricalContext cu:historical_context_E11 ;
+    cu:paraphrase "Cyrus visited sick companions and provided what they needed." ;
+    cu:sourceLocator "8.2.25" .
+
+cu:excerpt_E12 a cu:Excerpt ;
+    dcterms:source <https://www.cais-soas.com/CAIS/History/hakhamaneshian/xenophon/cyropaedia/xenophon_book_6.htm> ;
+    cu:depictsAction cu:action_E12 ;
+    cu:fromSource cu:source_cyropaedia ;
+    cu:hasHistoricalContext cu:historical_context_E12 ;
+    cu:paraphrase "Cyrus rewarded the most efficient hunters." ;
+    cu:sourceLocator "6.2.5" .
+
+cu:excerpt_E13 a cu:Excerpt ;
+    dcterms:source <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    cu:fromSource cu:source_cylinder ;
+    cu:hasHistoricalContext cu:historical_context_E13 ;
+    cu:paraphrase "Cyrus lists royal titles and his ancestry." ;
+    cu:sourceLocator "line 20-22" .
+
+cu:excerpt_E14 a cu:Excerpt ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1d*.html> ;
+    cu:fromSource cu:source_histories ;
+    cu:hasHistoricalContext cu:historical_context_E14 ;
+    cu:paraphrase "Cyrus's white horse drowned in the river Gyndes." ;
+    cu:sourceLocator "1.189" .
+
+cu:action_E01 a cu:Conquest ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "entered Babylon" .
+
+cu:action_E02 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "freed" .
+
+cu:action_E03 a cu:Restoration ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "returned" .
+
+cu:action_E04 a cu:Restoration ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "rebuilt" .
+
+cu:action_E05 a cu:Conquest ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "captured" .
+
+cu:action_E06 a cu:Conquest ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "took Croesus captive" .
+
+cu:action_E07 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "spared" .
+
+cu:action_E08 a cu:Conquest ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "entered Babylon" .
+
+cu:action_E09 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "supported" .
+
+cu:action_E10 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "rewarded" .
+
+cu:action_E11 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "visited sick" .
+
+cu:action_E12 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "rewarded" .
+
+cu:historical_context_E01 a cu:HistoricalContext ;
+    cu:narratedPeriod "539 BCE Babylon campaign" ;
+    cu:socialSetting "Babylonian royal rule and conquest; a peaceful entry is the inscription's own presentation" .
+
+cu:historical_context_E02 a cu:HistoricalContext ;
+    cu:narratedPeriod "around 539 BCE after the Babylon campaign" ;
+    cu:socialSetting "Royal authority and imposed labor in Babylon as narrated by the inscription" .
+
+cu:historical_context_E03 a cu:HistoricalContext ;
+    cu:narratedPeriod "around 539 BCE after the Babylon campaign" ;
+    cu:socialSetting "Temple cults and the placement of divine images matter in this inscription" .
+
+cu:historical_context_E04 a cu:HistoricalContext ;
+    cu:narratedPeriod "late sixth century BCE Babylon setting" ;
+    cu:socialSetting "Royal building works and the city wall/quay setting in the inscription" .
+
+cu:historical_context_E05 a cu:HistoricalContext ;
+    cu:narratedPeriod "mid sixth century BCE Lydia campaign" ;
+    cu:socialSetting "Siege warfare and changing control of a royal city in Herodotus's narrative" .
+
+cu:historical_context_E06 a cu:HistoricalContext ;
+    cu:narratedPeriod "mid sixth century BCE Lydia campaign" ;
+    cu:socialSetting "War and captivity of a defeated ruler in Herodotus's narrative" .
+
+cu:historical_context_E07 a cu:HistoricalContext ;
+    cu:narratedPeriod "mid sixth century BCE Lydia campaign" ;
+    cu:socialSetting "The reported pyre precedes the act of mercy; interpret the episode as a whole" .
+
+cu:historical_context_E08 a cu:HistoricalContext ;
+    cu:narratedPeriod "539 BCE Babylon campaign" ;
+    cu:socialSetting "Military tactics and the entry into a defended city in Herodotus's narrative" .
+
+cu:historical_context_E09 a cu:HistoricalContext ;
+    cu:narratedPeriod "sixth century BCE literary setting" ;
+    cu:socialSetting "Greek later account of Persian courtly friendship and leadership" .
+
+cu:historical_context_E10 a cu:HistoricalContext ;
+    cu:narratedPeriod "sixth century BCE literary setting" ;
+    cu:socialSetting "Reward and reciprocal loyalty in Xenophon's idealized Persian court" .
+
+cu:historical_context_E11 a cu:HistoricalContext ;
+    cu:narratedPeriod "sixth century BCE literary setting" ;
+    cu:socialSetting "Care for companions as a literary quality of leadership" .
+
+cu:historical_context_E12 a cu:HistoricalContext ;
+    cu:narratedPeriod "sixth century BCE literary setting" ;
+    cu:socialSetting "Military training and rewards within a literary portrait of leadership" .
+
+cu:historical_context_E13 a cu:HistoricalContext ;
+    cu:narratedPeriod "late sixth century BCE Babylon setting" ;
+    cu:socialSetting "Royal lineage and titulary legitimating the new ruler in the inscription" .
+
+cu:historical_context_E14 a cu:HistoricalContext ;
+    cu:narratedPeriod "mid sixth century BCE campaign toward Babylon" ;
+    cu:socialSetting "Herodotus's episode about the Gyndes; no target action category" .
+
+cu:narrator_context_cylinder a cu:NarratorContext ;
+    dcterms:source <https://www.britishmuseum.org/collection/object/W_1880-0617-1941> ;
+    cu:narratorExpectations "Legitimate kingship is conveyed through restoration of cults and relief of burdens; this is a reading of the inscription rather than a survey of all Babylonian views" ;
+    cu:narratorPeriod "late sixth century BCE" ;
+    cu:narratorViewpoint "Official Babylonian royal inscription associated with Cyrus's takeover" .
+
+cu:narrator_context_cyropaedia a cu:NarratorContext ;
+    dcterms:source <https://www.metmuseum.org/it/perspectives/cyrus-the-great> ;
+    cu:narratorExpectations "Generosity and care serve a literary argument about leadership; treat these episodes as Xenophon's presentation rather than verified eyewitness reports" ;
+    cu:narratorPeriod "fourth century BCE" ;
+    cu:narratorViewpoint "Later Greek literary portrayal of Cyrus as an exemplary leader" .
+
+cu:narrator_context_histories a cu:NarratorContext ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1b*.html> ;
+    cu:narratorExpectations "The Croesus story stages reversals of fortune and royal judgment; the pyre episode complicates a simple mercy label" ;
+    cu:narratorPeriod "fifth century BCE" ;
+    cu:narratorViewpoint "Later Greek historian narrating Cyrus and Croesus" .
+
+cu:source_cyropaedia a cu:Source ;
+    dcterms:creator "Xenophon" ;
+    dcterms:identifier <https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0204%3Abook%3D8%3Achapter%3D2> ;
+    dcterms:title "Cyropaedia" ;
+    cu:hasNarratorContext cu:narrator_context_cyropaedia .
+
+cu:source_cylinder a cu:Source ;
+    dcterms:creator "Ancient Babylonian royal inscription" ;
+    dcterms:identifier <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    dcterms:title "Cyrus Cylinder" ;
+    cu:hasNarratorContext cu:narrator_context_cylinder .
+
+cu:source_histories a cu:Source ;
+    dcterms:creator "Herodotus" ;
+    dcterms:identifier <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1b*.html> ;
+    dcterms:title "Histories Book I" ;
+    cu:hasNarratorContext cu:narrator_context_histories .
+

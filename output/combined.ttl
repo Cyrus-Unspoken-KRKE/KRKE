@@ -1,0 +1,551 @@
+@prefix cu: <https://example.org/cyrus-unspoken/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cu:affectedEntity a owl:DatatypeProperty ;
+    rdfs:domain cu:TacitImplication ;
+    rdfs:range xsd:string .
+
+cu:depiction_E01 a cu:Depiction ;
+    cu:derivedBy cu:RuleConquest ;
+    cu:hasEvidence cu:excerpt_E01 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Conqueror ;
+    cu:triggeredBy cu:action_E01 .
+
+cu:depiction_E02 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E02 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E02 .
+
+cu:depiction_E03 a cu:Depiction ;
+    cu:derivedBy cu:RuleRestoration ;
+    cu:hasEvidence cu:excerpt_E03 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Restorer ;
+    cu:triggeredBy cu:action_E03 .
+
+cu:depiction_E04 a cu:Depiction ;
+    cu:derivedBy cu:RuleRestoration ;
+    cu:hasEvidence cu:excerpt_E04 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Restorer ;
+    cu:triggeredBy cu:action_E04 .
+
+cu:depiction_E05 a cu:Depiction ;
+    cu:derivedBy cu:RuleConquest ;
+    cu:hasEvidence cu:excerpt_E05 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Conqueror ;
+    cu:triggeredBy cu:action_E05 .
+
+cu:depiction_E06 a cu:Depiction ;
+    cu:derivedBy cu:RuleConquest ;
+    cu:hasEvidence cu:excerpt_E06 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Conqueror ;
+    cu:triggeredBy cu:action_E06 .
+
+cu:depiction_E07 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E07 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E07 .
+
+cu:depiction_E08 a cu:Depiction ;
+    cu:derivedBy cu:RuleConquest ;
+    cu:hasEvidence cu:excerpt_E08 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:Conqueror ;
+    cu:triggeredBy cu:action_E08 .
+
+cu:depiction_E09 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E09 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E09 .
+
+cu:depiction_E10 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E10 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E10 .
+
+cu:depiction_E11 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E11 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E11 .
+
+cu:depiction_E12 a cu:Depiction ;
+    cu:derivedBy cu:RuleGovernance ;
+    cu:hasEvidence cu:excerpt_E12 ;
+    cu:hasSubject cu:Cyrus ;
+    cu:portraysAs cu:IdealRuler ;
+    cu:triggeredBy cu:action_E12 .
+
+cu:depictsAction a owl:ObjectProperty ;
+    rdfs:domain cu:Excerpt ;
+    rdfs:range cu:Action .
+
+cu:derivedBy a owl:ObjectProperty ;
+    rdfs:domain cu:Depiction ;
+    rdfs:range cu:Rule .
+
+cu:excerpt_E13 a cu:Excerpt ;
+    dcterms:source <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    cu:fromSource cu:source_cylinder ;
+    cu:hasHistoricalContext cu:historical_context_E13 ;
+    cu:paraphrase "Cyrus lists royal titles and his ancestry." ;
+    cu:sourceLocator "line 20-22" .
+
+cu:excerpt_E14 a cu:Excerpt ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1d*.html> ;
+    cu:fromSource cu:source_histories ;
+    cu:hasHistoricalContext cu:historical_context_E14 ;
+    cu:paraphrase "Cyrus's white horse drowned in the river Gyndes." ;
+    cu:sourceLocator "1.189" .
+
+cu:fromSource a owl:ObjectProperty ;
+    rdfs:domain cu:Excerpt ;
+    rdfs:range cu:Source .
+
+cu:hasAgent a owl:ObjectProperty ;
+    rdfs:domain cu:Action ;
+    rdfs:range cu:Person .
+
+cu:hasEvidence a owl:ObjectProperty ;
+    rdfs:domain cu:Depiction ;
+    rdfs:range cu:Excerpt .
+
+cu:hasHistoricalContext a owl:ObjectProperty ;
+    rdfs:domain cu:Excerpt ;
+    rdfs:range cu:HistoricalContext .
+
+cu:hasImplication a owl:ObjectProperty ;
+    rdfs:domain cu:Excerpt ;
+    rdfs:range cu:TacitImplication .
+
+cu:hasNarratorContext a owl:ObjectProperty ;
+    rdfs:domain cu:Source ;
+    rdfs:range cu:NarratorContext .
+
+cu:hasSubject a owl:ObjectProperty ;
+    rdfs:domain cu:Depiction ;
+    rdfs:range cu:Person .
+
+cu:implicationDerivedBy a owl:ObjectProperty ;
+    rdfs:domain cu:TacitImplication ;
+    rdfs:range cu:Rule .
+
+cu:implicationKind a owl:ObjectProperty ;
+    rdfs:domain cu:TacitImplication ;
+    rdfs:range cu:ImplicationKind .
+
+cu:implicationText a owl:DatatypeProperty ;
+    rdfs:domain cu:TacitImplication ;
+    rdfs:range xsd:string .
+
+cu:implicationTriggeredBy a owl:ObjectProperty ;
+    rdfs:domain cu:TacitImplication ;
+    rdfs:range cu:Action .
+
+cu:matchedCue a owl:DatatypeProperty ;
+    rdfs:domain cu:Action ;
+    rdfs:range xsd:string .
+
+cu:narratedPeriod a owl:DatatypeProperty ;
+    rdfs:domain cu:HistoricalContext ;
+    rdfs:range xsd:string .
+
+cu:narratorExpectations a owl:DatatypeProperty ;
+    rdfs:domain cu:NarratorContext ;
+    rdfs:range xsd:string .
+
+cu:narratorPeriod a owl:DatatypeProperty ;
+    rdfs:domain cu:NarratorContext ;
+    rdfs:range xsd:string .
+
+cu:narratorViewpoint a owl:DatatypeProperty ;
+    rdfs:domain cu:NarratorContext ;
+    rdfs:range xsd:string .
+
+cu:ontology a owl:Ontology ;
+    dcterms:title "Cyrus Unspoken: source-grounded tacit roles"@en ;
+    rdfs:comment "Teaching ontology. Role assignments characterize portrayals in passages; they are not biographical truths about Cyrus."@en .
+
+cu:paraphrase a owl:DatatypeProperty ;
+    rdfs:domain cu:Excerpt ;
+    rdfs:range xsd:string .
+
+cu:portraysAs a owl:ObjectProperty ;
+    rdfs:domain cu:Depiction ;
+    rdfs:range cu:TacitRole .
+
+cu:socialSetting a owl:DatatypeProperty ;
+    rdfs:domain cu:HistoricalContext ;
+    rdfs:range xsd:string .
+
+cu:sourceLocator a owl:DatatypeProperty ;
+    rdfs:domain cu:Excerpt ;
+    rdfs:range xsd:string .
+
+cu:triggeredBy a owl:ObjectProperty ;
+    rdfs:domain cu:Depiction ;
+    rdfs:range cu:Action .
+
+cu:HumanImpact a cu:ImplicationKind ;
+    rdfs:label "Human impact"@en .
+
+cu:PoliticalImpact a cu:ImplicationKind ;
+    rdfs:label "Political impact"@en .
+
+cu:PriorCondition a cu:ImplicationKind ;
+    rdfs:label "Prior condition"@en .
+
+cu:RuleCaptivity a cu:Rule ;
+    rdfs:label "Taking a captive implies a restriction of freedom"@en .
+
+cu:RuleCityCapture a cu:Rule ;
+    rdfs:label "Capturing a city suggests a political change of control"@en .
+
+cu:RulePriorService a cu:Rule ;
+    rdfs:label "Freeing from forced service presupposes an earlier burden"@en .
+
+cu:excerpt_E01 a cu:Excerpt ;
+    dcterms:source <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    cu:depictsAction cu:action_E01 ;
+    cu:fromSource cu:source_cylinder ;
+    cu:hasHistoricalContext cu:historical_context_E01 ;
+    cu:paraphrase "Cyrus's army entered Babylon without frightening its inhabitants." ;
+    cu:sourceLocator "line 24" .
+
+cu:excerpt_E02 a cu:Excerpt ;
+    dcterms:source <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    cu:depictsAction cu:action_E02 ;
+    cu:fromSource cu:source_cylinder ;
+    cu:hasHistoricalContext cu:historical_context_E02 ;
+    cu:hasImplication cu:implication_E02_PriorCondition ;
+    cu:paraphrase "Cyrus freed Babylonian citizens from forced service." ;
+    cu:sourceLocator "lines 25-26" .
+
+cu:excerpt_E03 a cu:Excerpt ;
+    dcterms:source <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    cu:depictsAction cu:action_E03 ;
+    cu:fromSource cu:source_cylinder ;
+    cu:hasHistoricalContext cu:historical_context_E03 ;
+    cu:paraphrase "Cyrus returned divine images to their sanctuaries." ;
+    cu:sourceLocator "line 32" .
+
+cu:excerpt_E04 a cu:Excerpt ;
+    dcterms:source <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    cu:depictsAction cu:action_E04 ;
+    cu:fromSource cu:source_cylinder ;
+    cu:hasHistoricalContext cu:historical_context_E04 ;
+    cu:paraphrase "Cyrus rebuilt part of Babylon's quay wall." ;
+    cu:sourceLocator "lines 39-41" .
+
+cu:excerpt_E05 a cu:Excerpt ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1b*.html> ;
+    cu:depictsAction cu:action_E05 ;
+    cu:fromSource cu:source_histories ;
+    cu:hasHistoricalContext cu:historical_context_E05 ;
+    cu:hasImplication cu:implication_E05_PoliticalImpact ;
+    cu:paraphrase "Cyrus's forces captured Sardis after soldiers breached its wall." ;
+    cu:sourceLocator "1.84" .
+
+cu:excerpt_E06 a cu:Excerpt ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1b*.html> ;
+    cu:depictsAction cu:action_E06 ;
+    cu:fromSource cu:source_histories ;
+    cu:hasHistoricalContext cu:historical_context_E06 ;
+    cu:hasImplication cu:implication_E06_HumanImpact ;
+    cu:paraphrase "Cyrus's forces took Croesus captive after the fall of Sardis." ;
+    cu:sourceLocator "1.86" .
+
+cu:excerpt_E07 a cu:Excerpt ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1b*.html> ;
+    cu:depictsAction cu:action_E07 ;
+    cu:fromSource cu:source_histories ;
+    cu:hasHistoricalContext cu:historical_context_E07 ;
+    cu:paraphrase "Cyrus ordered the pyre extinguished and spared Croesus." ;
+    cu:sourceLocator "1.86-88" .
+
+cu:excerpt_E08 a cu:Excerpt ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1d*.html> ;
+    cu:depictsAction cu:action_E08 ;
+    cu:fromSource cu:source_histories ;
+    cu:hasHistoricalContext cu:historical_context_E08 ;
+    cu:paraphrase "Cyrus diverted the Euphrates so his soldiers entered Babylon." ;
+    cu:sourceLocator "1.191" .
+
+cu:excerpt_E09 a cu:Excerpt ;
+    dcterms:source <https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0204%3Abook%3D8%3Achapter%3D2> ;
+    cu:depictsAction cu:action_E09 ;
+    cu:fromSource cu:source_cyropaedia ;
+    cu:hasHistoricalContext cu:historical_context_E09 ;
+    cu:paraphrase "Cyrus supported companions during their misfortunes." ;
+    cu:sourceLocator "8.2.1-2" .
+
+cu:excerpt_E10 a cu:Excerpt ;
+    dcterms:source <https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0204%3Abook%3D8%3Achapter%3D2> ;
+    cu:depictsAction cu:action_E10 ;
+    cu:fromSource cu:source_cyropaedia ;
+    cu:hasHistoricalContext cu:historical_context_E10 ;
+    cu:paraphrase "Cyrus rewarded those whose service pleased him." ;
+    cu:sourceLocator "8.2.3" .
+
+cu:excerpt_E11 a cu:Excerpt ;
+    dcterms:source <https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0204%3Abook%3D8%3Achapter%3D2> ;
+    cu:depictsAction cu:action_E11 ;
+    cu:fromSource cu:source_cyropaedia ;
+    cu:hasHistoricalContext cu:historical_context_E11 ;
+    cu:paraphrase "Cyrus visited sick companions and provided what they needed." ;
+    cu:sourceLocator "8.2.25" .
+
+cu:excerpt_E12 a cu:Excerpt ;
+    dcterms:source <https://www.cais-soas.com/CAIS/History/hakhamaneshian/xenophon/cyropaedia/xenophon_book_6.htm> ;
+    cu:depictsAction cu:action_E12 ;
+    cu:fromSource cu:source_cyropaedia ;
+    cu:hasHistoricalContext cu:historical_context_E12 ;
+    cu:paraphrase "Cyrus rewarded the most efficient hunters." ;
+    cu:sourceLocator "6.2.5" .
+
+cu:historical_context_E01 a cu:HistoricalContext ;
+    cu:narratedPeriod "539 BCE Babylon campaign" ;
+    cu:socialSetting "Babylonian royal rule and conquest; a peaceful entry is the inscription's own presentation" .
+
+cu:historical_context_E02 a cu:HistoricalContext ;
+    cu:narratedPeriod "around 539 BCE after the Babylon campaign" ;
+    cu:socialSetting "Royal authority and imposed labor in Babylon as narrated by the inscription" .
+
+cu:historical_context_E03 a cu:HistoricalContext ;
+    cu:narratedPeriod "around 539 BCE after the Babylon campaign" ;
+    cu:socialSetting "Temple cults and the placement of divine images matter in this inscription" .
+
+cu:historical_context_E04 a cu:HistoricalContext ;
+    cu:narratedPeriod "late sixth century BCE Babylon setting" ;
+    cu:socialSetting "Royal building works and the city wall/quay setting in the inscription" .
+
+cu:historical_context_E05 a cu:HistoricalContext ;
+    cu:narratedPeriod "mid sixth century BCE Lydia campaign" ;
+    cu:socialSetting "Siege warfare and changing control of a royal city in Herodotus's narrative" .
+
+cu:historical_context_E06 a cu:HistoricalContext ;
+    cu:narratedPeriod "mid sixth century BCE Lydia campaign" ;
+    cu:socialSetting "War and captivity of a defeated ruler in Herodotus's narrative" .
+
+cu:historical_context_E07 a cu:HistoricalContext ;
+    cu:narratedPeriod "mid sixth century BCE Lydia campaign" ;
+    cu:socialSetting "The reported pyre precedes the act of mercy; interpret the episode as a whole" .
+
+cu:historical_context_E08 a cu:HistoricalContext ;
+    cu:narratedPeriod "539 BCE Babylon campaign" ;
+    cu:socialSetting "Military tactics and the entry into a defended city in Herodotus's narrative" .
+
+cu:historical_context_E09 a cu:HistoricalContext ;
+    cu:narratedPeriod "sixth century BCE literary setting" ;
+    cu:socialSetting "Greek later account of Persian courtly friendship and leadership" .
+
+cu:historical_context_E10 a cu:HistoricalContext ;
+    cu:narratedPeriod "sixth century BCE literary setting" ;
+    cu:socialSetting "Reward and reciprocal loyalty in Xenophon's idealized Persian court" .
+
+cu:historical_context_E11 a cu:HistoricalContext ;
+    cu:narratedPeriod "sixth century BCE literary setting" ;
+    cu:socialSetting "Care for companions as a literary quality of leadership" .
+
+cu:historical_context_E12 a cu:HistoricalContext ;
+    cu:narratedPeriod "sixth century BCE literary setting" ;
+    cu:socialSetting "Military training and rewards within a literary portrait of leadership" .
+
+cu:historical_context_E13 a cu:HistoricalContext ;
+    cu:narratedPeriod "late sixth century BCE Babylon setting" ;
+    cu:socialSetting "Royal lineage and titulary legitimating the new ruler in the inscription" .
+
+cu:historical_context_E14 a cu:HistoricalContext ;
+    cu:narratedPeriod "mid sixth century BCE campaign toward Babylon" ;
+    cu:socialSetting "Herodotus's episode about the Gyndes; no target action category" .
+
+cu:implication_E02_PriorCondition a cu:TacitImplication ;
+    cu:affectedEntity "Babylonian citizens" ;
+    cu:implicationDerivedBy cu:RulePriorService ;
+    cu:implicationKind cu:PriorCondition ;
+    cu:implicationText "The passage presupposes an earlier burden of forced service." ;
+    cu:implicationTriggeredBy cu:action_E02 .
+
+cu:implication_E05_PoliticalImpact a cu:TacitImplication ;
+    cu:affectedEntity "Sardis" ;
+    cu:implicationDerivedBy cu:RuleCityCapture ;
+    cu:implicationKind cu:PoliticalImpact ;
+    cu:implicationText "The city's capture suggests a change of political control in this narrative." ;
+    cu:implicationTriggeredBy cu:action_E05 .
+
+cu:implication_E06_HumanImpact a cu:TacitImplication ;
+    cu:affectedEntity "Croesus" ;
+    cu:implicationDerivedBy cu:RuleCaptivity ;
+    cu:implicationKind cu:HumanImpact ;
+    cu:implicationText "Captivity implies a restriction of Croesus's personal freedom." ;
+    cu:implicationTriggeredBy cu:action_E06 .
+
+cu:narrator_context_cylinder a cu:NarratorContext ;
+    dcterms:source <https://www.britishmuseum.org/collection/object/W_1880-0617-1941> ;
+    cu:narratorExpectations "Legitimate kingship is conveyed through restoration of cults and relief of burdens; this is a reading of the inscription rather than a survey of all Babylonian views" ;
+    cu:narratorPeriod "late sixth century BCE" ;
+    cu:narratorViewpoint "Official Babylonian royal inscription associated with Cyrus's takeover" .
+
+cu:narrator_context_cyropaedia a cu:NarratorContext ;
+    dcterms:source <https://www.metmuseum.org/it/perspectives/cyrus-the-great> ;
+    cu:narratorExpectations "Generosity and care serve a literary argument about leadership; treat these episodes as Xenophon's presentation rather than verified eyewitness reports" ;
+    cu:narratorPeriod "fourth century BCE" ;
+    cu:narratorViewpoint "Later Greek literary portrayal of Cyrus as an exemplary leader" .
+
+cu:narrator_context_histories a cu:NarratorContext ;
+    dcterms:source <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1b*.html> ;
+    cu:narratorExpectations "The Croesus story stages reversals of fortune and royal judgment; the pyre episode complicates a simple mercy label" ;
+    cu:narratorPeriod "fifth century BCE" ;
+    cu:narratorViewpoint "Later Greek historian narrating Cyrus and Croesus" .
+
+cu:Restoration a owl:Class ;
+    rdfs:label "Restoration action"@en ;
+    rdfs:subClassOf cu:Action .
+
+cu:Restorer a cu:TacitRole ;
+    rdfs:label "Restorer"@en .
+
+cu:RuleRestoration a cu:Rule ;
+    rdfs:label "Restoration action suggests Restorer"@en .
+
+cu:action_E01 a cu:Conquest ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "entered Babylon" .
+
+cu:action_E03 a cu:Restoration ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "returned" .
+
+cu:action_E04 a cu:Restoration ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "rebuilt" .
+
+cu:action_E07 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "spared" .
+
+cu:action_E08 a cu:Conquest ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "entered Babylon" .
+
+cu:action_E09 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "supported" .
+
+cu:action_E10 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "rewarded" .
+
+cu:action_E11 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "visited sick" .
+
+cu:action_E12 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "rewarded" .
+
+cu:Person a owl:Class ;
+    rdfs:label "Person"@en .
+
+cu:action_E02 a cu:GoodGovernance ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "freed" .
+
+cu:action_E05 a cu:Conquest ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "captured" .
+
+cu:action_E06 a cu:Conquest ;
+    cu:hasAgent cu:Cyrus ;
+    cu:matchedCue "took Croesus captive" .
+
+cu:Conqueror a cu:TacitRole ;
+    rdfs:label "Conqueror"@en .
+
+cu:Conquest a owl:Class ;
+    rdfs:label "Conquest action"@en ;
+    rdfs:subClassOf cu:Action .
+
+cu:ImplicationKind a owl:Class ;
+    rdfs:label "Kind of tacit implication"@en .
+
+cu:RuleConquest a cu:Rule ;
+    rdfs:label "Conquest action suggests Conqueror"@en .
+
+cu:TacitRole a owl:Class ;
+    rdfs:label "Tacit role (interpretive category)"@en .
+
+cu:source_cyropaedia a cu:Source ;
+    dcterms:creator "Xenophon" ;
+    dcterms:identifier <https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0204%3Abook%3D8%3Achapter%3D2> ;
+    dcterms:title "Cyropaedia" ;
+    cu:hasNarratorContext cu:narrator_context_cyropaedia .
+
+cu:Source a owl:Class ;
+    rdfs:label "Source"@en .
+
+cu:source_cylinder a cu:Source ;
+    dcterms:creator "Ancient Babylonian royal inscription" ;
+    dcterms:identifier <https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/> ;
+    dcterms:title "Cyrus Cylinder" ;
+    cu:hasNarratorContext cu:narrator_context_cylinder .
+
+cu:source_histories a cu:Source ;
+    dcterms:creator "Herodotus" ;
+    dcterms:identifier <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1b*.html> ;
+    dcterms:title "Histories Book I" ;
+    cu:hasNarratorContext cu:narrator_context_histories .
+
+cu:GoodGovernance a owl:Class ;
+    rdfs:label "Good governance action"@en ;
+    rdfs:subClassOf cu:Action .
+
+cu:IdealRuler a cu:TacitRole ;
+    rdfs:label "Ideal ruler"@en ;
+    rdfs:comment "Operational shorthand for selected care, mercy, relief and reward cues; interpretive, contested, and source-specific."@en .
+
+cu:RuleGovernance a cu:Rule ;
+    rdfs:label "Good governance action suggests Ideal ruler"@en .
+
+cu:NarratorContext a owl:Class ;
+    rdfs:label "Narrator's time and viewpoint"@en .
+
+cu:Action a owl:Class ;
+    rdfs:label "Narrated action"@en .
+
+cu:Rule a owl:Class ;
+    rdfs:label "Interpretive rule"@en .
+
+cu:TacitImplication a owl:Class ;
+    rdfs:label "Qualified tacit implication"@en ;
+    rdfs:comment "A small set of source-grounded presuppositions or possible human and political consequences. These are project interpretations, not newly verified historical events."@en .
+
+cu:Depiction a owl:Class ;
+    rdfs:label "Source-grounded depiction"@en ;
+    rdfs:comment "Reifies a role assignment so source, passage, triggering action, and rule remain attached."@en .
+
+cu:HistoricalContext a owl:Class ;
+    rdfs:label "Narrated historical setting"@en .
+
+cu:Excerpt a owl:Class ;
+    rdfs:label "Excerpt"@en .
+
+cu:Cyrus a cu:Person ;
+    rdfs:label "Cyrus the Great"@en .
+

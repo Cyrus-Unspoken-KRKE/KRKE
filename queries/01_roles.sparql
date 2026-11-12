@@ -1,0 +1,6 @@
+PREFIX cu: <https://example.org/cyrus-unspoken/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?role ?label WHERE {
+  ?depiction a cu:Depiction ; cu:hasSubject cu:Cyrus ; cu:portraysAs ?role .
+  ?role rdfs:label ?label .
+} ORDER BY ?label

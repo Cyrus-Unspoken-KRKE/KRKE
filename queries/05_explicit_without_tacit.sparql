@@ -1,0 +1,5 @@
+PREFIX cu: <https://example.org/cyrus-unspoken/>
+SELECT ?excerpt ?text WHERE {
+  ?excerpt a cu:Excerpt ; cu:paraphrase ?text .
+  FILTER NOT EXISTS { ?depiction cu:hasEvidence ?excerpt . }
+} ORDER BY ?excerpt

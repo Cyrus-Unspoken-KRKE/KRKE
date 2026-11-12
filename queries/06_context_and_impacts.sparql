@@ -1,0 +1,12 @@
+PREFIX cu: <https://example.org/cyrus-unspoken/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?excerpt ?eventTime ?narratorTime ?viewpoint ?kindLabel ?implication WHERE {
+  ?excerpt cu:hasImplication ?implicit ;
+           cu:hasHistoricalContext ?historical ;
+           cu:fromSource ?source .
+  ?source cu:hasNarratorContext ?narrator .
+  ?historical cu:narratedPeriod ?eventTime .
+  ?narrator cu:narratorPeriod ?narratorTime ; cu:narratorViewpoint ?viewpoint .
+  ?implicit cu:implicationKind ?kind ; cu:implicationText ?implication .
+  ?kind rdfs:label ?kindLabel .
+} ORDER BY ?excerpt

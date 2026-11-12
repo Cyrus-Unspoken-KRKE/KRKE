@@ -1,0 +1,67 @@
+@prefix cu: <https://example.org/cyrus-unspoken/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+cu:ontology a owl:Ontology ;
+  dcterms:title "Cyrus Unspoken: source-grounded tacit roles"@en ;
+  rdfs:comment "Teaching ontology. Role assignments characterize portrayals in passages; they are not biographical truths about Cyrus."@en .
+
+cu:Person a owl:Class ; rdfs:label "Person"@en .
+cu:Source a owl:Class ; rdfs:label "Source"@en .
+cu:Excerpt a owl:Class ; rdfs:label "Excerpt"@en .
+cu:Action a owl:Class ; rdfs:label "Narrated action"@en .
+cu:Restoration a owl:Class ; rdfs:subClassOf cu:Action ; rdfs:label "Restoration action"@en .
+cu:Conquest a owl:Class ; rdfs:subClassOf cu:Action ; rdfs:label "Conquest action"@en .
+cu:GoodGovernance a owl:Class ; rdfs:subClassOf cu:Action ; rdfs:label "Good governance action"@en .
+cu:TacitRole a owl:Class ; rdfs:label "Tacit role (interpretive category)"@en .
+cu:Depiction a owl:Class ; rdfs:label "Source-grounded depiction"@en ;
+  rdfs:comment "Reifies a role assignment so source, passage, triggering action, and rule remain attached."@en .
+cu:Rule a owl:Class ; rdfs:label "Interpretive rule"@en .
+cu:HistoricalContext a owl:Class ; rdfs:label "Narrated historical setting"@en .
+cu:NarratorContext a owl:Class ; rdfs:label "Narrator's time and viewpoint"@en .
+cu:TacitImplication a owl:Class ; rdfs:label "Qualified tacit implication"@en ;
+  rdfs:comment "A small set of source-grounded presuppositions or possible human and political consequences. These are project interpretations, not newly verified historical events."@en .
+cu:ImplicationKind a owl:Class ; rdfs:label "Kind of tacit implication"@en .
+
+cu:fromSource a owl:ObjectProperty ; rdfs:domain cu:Excerpt ; rdfs:range cu:Source .
+cu:depictsAction a owl:ObjectProperty ; rdfs:domain cu:Excerpt ; rdfs:range cu:Action .
+cu:hasAgent a owl:ObjectProperty ; rdfs:domain cu:Action ; rdfs:range cu:Person .
+cu:hasEvidence a owl:ObjectProperty ; rdfs:domain cu:Depiction ; rdfs:range cu:Excerpt .
+cu:hasSubject a owl:ObjectProperty ; rdfs:domain cu:Depiction ; rdfs:range cu:Person .
+cu:portraysAs a owl:ObjectProperty ; rdfs:domain cu:Depiction ; rdfs:range cu:TacitRole .
+cu:triggeredBy a owl:ObjectProperty ; rdfs:domain cu:Depiction ; rdfs:range cu:Action .
+cu:derivedBy a owl:ObjectProperty ; rdfs:domain cu:Depiction ; rdfs:range cu:Rule .
+cu:sourceLocator a owl:DatatypeProperty ; rdfs:domain cu:Excerpt ; rdfs:range xsd:string .
+cu:paraphrase a owl:DatatypeProperty ; rdfs:domain cu:Excerpt ; rdfs:range xsd:string .
+cu:matchedCue a owl:DatatypeProperty ; rdfs:domain cu:Action ; rdfs:range xsd:string .
+cu:hasHistoricalContext a owl:ObjectProperty ; rdfs:domain cu:Excerpt ; rdfs:range cu:HistoricalContext .
+cu:hasNarratorContext a owl:ObjectProperty ; rdfs:domain cu:Source ; rdfs:range cu:NarratorContext .
+cu:hasImplication a owl:ObjectProperty ; rdfs:domain cu:Excerpt ; rdfs:range cu:TacitImplication .
+cu:implicationTriggeredBy a owl:ObjectProperty ; rdfs:domain cu:TacitImplication ; rdfs:range cu:Action .
+cu:implicationDerivedBy a owl:ObjectProperty ; rdfs:domain cu:TacitImplication ; rdfs:range cu:Rule .
+cu:implicationKind a owl:ObjectProperty ; rdfs:domain cu:TacitImplication ; rdfs:range cu:ImplicationKind .
+cu:implicationText a owl:DatatypeProperty ; rdfs:domain cu:TacitImplication ; rdfs:range xsd:string .
+cu:affectedEntity a owl:DatatypeProperty ; rdfs:domain cu:TacitImplication ; rdfs:range xsd:string .
+cu:narratedPeriod a owl:DatatypeProperty ; rdfs:domain cu:HistoricalContext ; rdfs:range xsd:string .
+cu:socialSetting a owl:DatatypeProperty ; rdfs:domain cu:HistoricalContext ; rdfs:range xsd:string .
+cu:narratorPeriod a owl:DatatypeProperty ; rdfs:domain cu:NarratorContext ; rdfs:range xsd:string .
+cu:narratorViewpoint a owl:DatatypeProperty ; rdfs:domain cu:NarratorContext ; rdfs:range xsd:string .
+cu:narratorExpectations a owl:DatatypeProperty ; rdfs:domain cu:NarratorContext ; rdfs:range xsd:string .
+
+cu:Cyrus a cu:Person ; rdfs:label "Cyrus the Great"@en .
+cu:Restorer a cu:TacitRole ; rdfs:label "Restorer"@en .
+cu:Conqueror a cu:TacitRole ; rdfs:label "Conqueror"@en .
+cu:IdealRuler a cu:TacitRole ; rdfs:label "Ideal ruler"@en ;
+  rdfs:comment "Operational shorthand for selected care, mercy, relief and reward cues; interpretive, contested, and source-specific."@en .
+cu:RuleRestoration a cu:Rule ; rdfs:label "Restoration action suggests Restorer"@en .
+cu:RuleConquest a cu:Rule ; rdfs:label "Conquest action suggests Conqueror"@en .
+cu:RuleGovernance a cu:Rule ; rdfs:label "Good governance action suggests Ideal ruler"@en .
+cu:RulePriorService a cu:Rule ; rdfs:label "Freeing from forced service presupposes an earlier burden"@en .
+cu:RuleCaptivity a cu:Rule ; rdfs:label "Taking a captive implies a restriction of freedom"@en .
+cu:RuleCityCapture a cu:Rule ; rdfs:label "Capturing a city suggests a political change of control"@en .
+cu:PriorCondition a cu:ImplicationKind ; rdfs:label "Prior condition"@en .
+cu:HumanImpact a cu:ImplicationKind ; rdfs:label "Human impact"@en .
+cu:PoliticalImpact a cu:ImplicationKind ; rdfs:label "Political impact"@en .

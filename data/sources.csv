@@ -1,0 +1,4 @@
+source_id,title,author,genre,reference_url,edition_note
+cylinder,Cyrus Cylinder,Ancient Babylonian royal inscription,royal inscription,https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/,English translation presented by Livius; original Akkadian text. Our corpus uses original short English paraphrases rather than reproduced translation.
+histories,Histories Book I,Herodotus,historiography,https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1b*.html,English translation at LacusCurtius; sections 1.84 and 1.86-88. Section 1.191 has a separate URL in the excerpt table.
+cyropaedia,Cyropaedia,Xenophon,literary political narrative,https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0204%3Abook%3D8%3Achapter%3D2,Walter Miller translation at Perseus; 6.2.5 has a separate URL in the excerpt table. Not a direct chronicle of events.

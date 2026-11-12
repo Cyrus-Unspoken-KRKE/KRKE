@@ -1,0 +1,9 @@
+PREFIX cu: <https://example.org/cyrus-unspoken/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?sourceTitle ?roleLabel (COUNT(?depiction) AS ?passages) WHERE {
+  ?depiction a cu:Depiction ; cu:portraysAs ?role ; cu:hasEvidence ?excerpt .
+  ?excerpt cu:fromSource ?source .
+  ?source dcterms:title ?sourceTitle .
+  ?role rdfs:label ?roleLabel .
+} GROUP BY ?sourceTitle ?roleLabel ORDER BY ?sourceTitle ?roleLabel

@@ -1,0 +1,4 @@
+id,kind,bearer,claim,rule
+E02,PriorCondition,Babylonian citizens,The passage presupposes an earlier burden of forced service.,RulePriorService
+E05,PoliticalImpact,Sardis,The city's capture suggests a change of political control in this narrative.,RuleCityCapture
+E06,HumanImpact,Croesus,Captivity implies a restriction of Croesus's personal freedom.,RuleCaptivity

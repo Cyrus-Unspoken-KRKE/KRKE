@@ -1,0 +1,15 @@
+id,gold_action,predicted_action,cue,gold_role,predicted_role
+E01,Conquest,Conquest,entered Babylon,Conqueror,Conqueror
+E02,GoodGovernance,GoodGovernance,freed,IdealRuler,IdealRuler
+E03,Restoration,Restoration,returned,Restorer,Restorer
+E04,Restoration,Restoration,rebuilt,Restorer,Restorer
+E05,Conquest,Conquest,captured,Conqueror,Conqueror
+E06,Conquest,Conquest,took Croesus captive,Conqueror,Conqueror
+E07,GoodGovernance,GoodGovernance,spared,IdealRuler,IdealRuler
+E08,Conquest,Conquest,entered Babylon,Conqueror,Conqueror
+E09,GoodGovernance,GoodGovernance,supported,IdealRuler,IdealRuler
+E10,GoodGovernance,GoodGovernance,rewarded,IdealRuler,IdealRuler
+E11,GoodGovernance,GoodGovernance,visited sick,IdealRuler,IdealRuler
+E12,GoodGovernance,GoodGovernance,rewarded,IdealRuler,IdealRuler
+E13,None,None,,None,None
+E14,None,None,,None,None
